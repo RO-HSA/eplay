@@ -23,7 +23,7 @@ const Header = () => (
     </div>
 
     <LinkCart href="">
-      0 - produtos(S)
+      0 - produto(s)
       <img src={carrinho} alt="Carrinho" />
     </LinkCart>
   </HeaderBar>
