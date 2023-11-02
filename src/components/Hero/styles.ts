@@ -1,6 +1,8 @@
 import styled from 'styled-components'
+
 import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
+import { ButtonContainer } from '../Button/styles'
 
 export const Banner = styled.div`
   position: relative;
@@ -55,5 +57,9 @@ export const Infos = styled.div`
       display: block;
       text-decoration: line-through;
     }
+  }
+
+  ${ButtonContainer} {
+    cursor: pointer;
   }
 `
