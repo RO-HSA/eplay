@@ -1,13 +1,6 @@
-import { useEffect, useState } from 'react'
-
-import { useGetSoonQuery, useGetOnSaleQuery } from '../../services/api'
 import Banner from '../../components/Banner'
 import ProductsList from '../../components/ProductsList'
-
-import resident from '../../assets/images/resident.png'
-import diablo from '../../assets/images/diablo.png'
-import zelda from '../../assets/images/zelda.png'
-import starWars from '../../assets/images/star_wars.png'
+import { useGetOnSaleQuery, useGetSoonQuery } from '../../services/api'
 
 export interface GalleryItem {
   type: 'image' | 'video'
@@ -40,7 +33,7 @@ export type Game = {
 
 const Home = () => {
   const { data: onSaleGames } = useGetOnSaleQuery()
-  const { data: soonGames } = useGetOnSaleQuery()
+  const { data: soonGames } = useGetSoonQuery()
 
   if (onSaleGames && soonGames) {
     return (
