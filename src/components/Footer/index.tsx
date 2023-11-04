@@ -18,7 +18,7 @@ const Footer = () => (
             <Link to="/categories#sports">Esportes</Link>
           </li>
           <li>
-            <Link to="/categories#simulation">Siomulação</Link>
+            <Link to="/categories#simulation">Simulação</Link>
           </li>
           <li>
             <Link to="/categories#fighting">Luta</Link>
