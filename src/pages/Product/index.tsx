@@ -1,14 +1,9 @@
-import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import { Game } from '../Home'
 import { useGetGameQuery } from '../../services/api'
 import Hero from '../../components/Hero'
 import Section from '../../components/Section'
-
 import Gallery from '../../components/Gallery'
-
-import residentEvil from '../../assets/images/resident.png'
 
 const Product = () => {
   const { id } = useParams()
