@@ -1,7 +1,6 @@
 import { useDispatch } from 'react-redux'
 
 import { Banner, Infos } from './styles'
-import { Game } from '../../pages/Home'
 import { parseToBrl } from '../../utils'
 import { add, open } from '../../store/reducers/cart'
 import Tag from '../Tag'
